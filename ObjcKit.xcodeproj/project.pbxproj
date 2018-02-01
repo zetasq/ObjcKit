@@ -10,6 +10,7 @@
 		D4BEFB812022A1960061631C /* ObjcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BEFB772022A1960061631C /* ObjcKit.framework */; };
 		D4BEFB862022A1960061631C /* ObjcKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BEFB852022A1960061631C /* ObjcKitTests.m */; };
 		D4BEFB882022A1960061631C /* ObjcKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFB7A2022A1960061631C /* ObjcKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4BEFB9C202365790061631C /* TypeInfer.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFB9B2023639E0061631C /* TypeInfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D4BEFB802022A1960061631C /* ObjcKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BEFB852022A1960061631C /* ObjcKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcKitTests.m; sourceTree = "<group>"; };
 		D4BEFB872022A1960061631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4BEFB9B2023639E0061631C /* TypeInfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeInfer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		D4BEFB792022A1960061631C /* ObjcKit */ = {
 			isa = PBXGroup;
 			children = (
+				D4BEFB9B2023639E0061631C /* TypeInfer.h */,
 				D4BEFB7A2022A1960061631C /* ObjcKit.h */,
 				D4BEFB7B2022A1960061631C /* Info.plist */,
 			);
@@ -94,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4BEFB882022A1960061631C /* ObjcKit.h in Headers */,
+				D4BEFB9C202365790061631C /* TypeInfer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +338,7 @@
 		D4BEFB8C2022A1960061631C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -354,6 +359,7 @@
 		D4BEFB8D2022A1960061631C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
