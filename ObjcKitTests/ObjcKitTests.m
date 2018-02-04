@@ -6,7 +6,7 @@
 //  Copyright © 2018 Zhu Shengqi. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 @import ObjcKit;
 
 @interface ObjcKitTests : XCTestCase
@@ -15,15 +15,9 @@
 
 @implementation ObjcKitTests
 
+//#define zsq(format, ...) printf(format __VA_OPT__(,) __VA_ARGS__)
 - (void)testExample {
   
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end

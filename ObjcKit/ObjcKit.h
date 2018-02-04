@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char ObjcKitVersionString[];
 
 
 #import <ObjcKit/TypeInfer.h>
+#import <ObjcKit/Scope.h>
