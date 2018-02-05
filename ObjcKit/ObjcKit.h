@@ -19,3 +19,6 @@ FOUNDATION_EXPORT const unsigned char ObjcKitVersionString[];
 
 #import <ObjcKit/TypeInfer.h>
 #import <ObjcKit/Scope.h>
+#import <ObjcKit/Enumeration.h>
+#import <ObjcKit/Templates.h>
+#import <ObjcKit/KeyPath.h>

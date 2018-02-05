@@ -8,12 +8,13 @@
 
 #include "Scope.h"
 
-void _executeCleanupBlock(_CleanupBlock _Nonnull * _Nonnull block)
+#import "Foundation/Foundation.h"
+
+void _executeCleanupBlock(_CleanupBlock _Nonnull * _Nonnull block __attribute__((__noescape__)))
 {
   (*block)();
 }
 
-#import "Foundation/Foundation.h"
 void test() {
   NSObject *abc = NSObject.new;
   
