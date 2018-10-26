@@ -24,7 +24,6 @@
   
   let x = @keyPath(stringArray, firstObject.length);
   NSLog(@"x = %@", x);
-
 }
 
 @end

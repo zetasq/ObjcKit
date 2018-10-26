@@ -15,21 +15,3 @@ void _executeCleanupBlock(_CleanupBlock _Nonnull * _Nonnull block __attribute__(
   (*block)();
 }
 
-void test() {
-  NSObject *abc = NSObject.new;
-  
-  if (abc == nil) {
-    
-  }
-  @weakify(abc);
-  dispatch_async(dispatch_get_main_queue(), ^{
-    @strongify(abc);
-    
-    @weakify(abc);
-    dispatch_async(dispatch_get_main_queue(), ^{
-      @strongify(abc);
-      
-    });
-  });
-}
-
