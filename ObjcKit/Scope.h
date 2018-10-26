@@ -8,6 +8,8 @@
 
 #pragma once
 
+@import Foundation;
+
 #import "CommonMacros.h"
 #import "VariadicSubscription.h"
 #import "VariadicMapping.h"
@@ -34,13 +36,7 @@
 
 typedef void (^_CleanupBlock)(void);
 
-#if defined(__cplusplus)
-extern "C" {
-#endif
-  void _executeCleanupBlock(_CleanupBlock _Nonnull * _Nonnull block __attribute__((__noescape__)));
-#if defined(__cplusplus)
-}
-#endif
+FOUNDATION_EXTERN void _executeCleanupBlock(_CleanupBlock _Nonnull * _Nonnull block __attribute__((__noescape__)));
 
 #define defer \
         _keywordify \

@@ -8,6 +8,10 @@
 
 #pragma once
 
+@import Foundation;
+
+#pragma mark - Type Infer
+
 #if defined(__cplusplus)
 
 #define let auto const
@@ -19,5 +23,8 @@
 #define var __auto_type
 
 #endif
+
+
+
 
 

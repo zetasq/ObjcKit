@@ -22,6 +22,15 @@
     NSLog(@"xyz = %@", xyz);
   }
   
+  {
+    NSLog(@"1");
+    @defer {
+      NSLog(@"2");
+    };
+    
+    NSLog(@"3");
+  }
+  
   let x = @keyPath(stringArray, firstObject.length);
   NSLog(@"x = %@", x);
 }
