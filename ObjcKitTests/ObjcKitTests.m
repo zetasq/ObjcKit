@@ -17,11 +17,12 @@
 
 //#define zsq(format, ...) printf(format __VA_OPT__(,) __VA_ARGS__)
 - (void)testExample {
-  NSArray<NSString *> * a = @[@"abc", @"xyz"];
-  foreach (xyz, (@[@"abc", @"xxx"])) {
+  NSArray<NSString *> * stringArray = @[@"abc", @"xyz"];
+  foreach (xyz, stringArray) {
     NSLog(@"xyz = %@", xyz);
   }
-  let x = @keyPath(a, firstObject.length);
+  
+  let x = @keyPath(stringArray, firstObject.length);
   NSLog(@"x = %@", x);
 
 }

@@ -20,7 +20,6 @@
 		D4BEFBE2202749F60061631C /* CppTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4BEFBE1202749F60061631C /* CppTests.mm */; };
 		D4BEFBE420275A330061631C /* Enumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFBE320275A330061631C /* Enumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C2937120275FE60040B988 /* KeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C2937020275FE60040B988 /* KeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4C293732027606E0040B988 /* Keyword.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C293722027606E0040B988 /* Keyword.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		D4BEFBE1202749F60061631C /* CppTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppTests.mm; sourceTree = "<group>"; };
 		D4BEFBE320275A330061631C /* Enumeration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumeration.h; sourceTree = "<group>"; };
 		D4C2937020275FE60040B988 /* KeyPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyPath.h; sourceTree = "<group>"; };
-		D4C293722027606E0040B988 /* Keyword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keyword.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				D4BEFB7A2022A1960061631C /* ObjcKit.h */,
-				D4C293722027606E0040B988 /* Keyword.h */,
 				D4BEFB9B2023639E0061631C /* TypeInfer.h */,
 				D4BEFBD32026BB830061631C /* Scope.h */,
 				D4BEFBD22026BB830061631C /* Scope.m */,
@@ -144,7 +141,6 @@
 			files = (
 				D4BEFBDA2026EED80061631C /* VariadicSubscription.h in Headers */,
 				D4BEFBD52026BB830061631C /* Scope.h in Headers */,
-				D4C293732027606E0040B988 /* Keyword.h in Headers */,
 				D4C2937120275FE60040B988 /* KeyPath.h in Headers */,
 				D4BEFBE420275A330061631C /* Enumeration.h in Headers */,
 				D4BEFBE0202744CD0061631C /* Templates.h in Headers */,
@@ -402,7 +398,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -423,7 +419,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -441,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)",
 					"$(inherited)",
@@ -458,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)",
 					"$(inherited)",
