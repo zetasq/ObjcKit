@@ -10,7 +10,7 @@
 		D4BEFB812022A1960061631C /* ObjcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BEFB772022A1960061631C /* ObjcKit.framework */; };
 		D4BEFB862022A1960061631C /* ObjcKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BEFB852022A1960061631C /* ObjcKitTests.m */; };
 		D4BEFB882022A1960061631C /* ObjcKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFB7A2022A1960061631C /* ObjcKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4BEFB9C202365790061631C /* BasicDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFB9B2023639E0061631C /* BasicDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4BEFB9C202365790061631C /* BaseDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFB9B2023639E0061631C /* BaseDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4BEFBD42026BB830061631C /* Scope.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BEFBD22026BB830061631C /* Scope.m */; };
 		D4BEFBD52026BB830061631C /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFBD32026BB830061631C /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4BEFBDA2026EED80061631C /* VariadicSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BEFBD92026EEC90061631C /* VariadicSubscription.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,7 +37,7 @@
 		D4BEFB802022A1960061631C /* ObjcKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BEFB852022A1960061631C /* ObjcKitTests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = ObjcKitTests.m; sourceTree = "<group>"; };
 		D4BEFB872022A1960061631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4BEFB9B2023639E0061631C /* BasicDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDefines.h; sourceTree = "<group>"; };
+		D4BEFB9B2023639E0061631C /* BaseDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDefines.h; sourceTree = "<group>"; };
 		D4BEFBD22026BB830061631C /* Scope.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scope.m; sourceTree = "<group>"; };
 		D4BEFBD32026BB830061631C /* Scope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scope.h; sourceTree = "<group>"; };
 		D4BEFBD92026EEC90061631C /* VariadicSubscription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariadicSubscription.h; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D4BEFB7A2022A1960061631C /* ObjcKit.h */,
-				D4BEFB9B2023639E0061631C /* BasicDefines.h */,
+				D4BEFB9B2023639E0061631C /* BaseDefines.h */,
 				D4BEFBD32026BB830061631C /* Scope.h */,
 				D4BEFBD22026BB830061631C /* Scope.m */,
 				D4BEFBE320275A330061631C /* Enumeration.h */,
@@ -140,7 +140,7 @@
 				D4BEFBDC2026F00F0061631C /* CommonMacros.h in Headers */,
 				D4BEFBDE2027207D0061631C /* VariadicMapping.h in Headers */,
 				D4BEFB882022A1960061631C /* ObjcKit.h in Headers */,
-				D4BEFB9C202365790061631C /* BasicDefines.h in Headers */,
+				D4BEFB9C202365790061631C /* BaseDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

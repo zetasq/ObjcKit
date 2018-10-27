@@ -15,7 +15,7 @@
 
 @implementation ObjcKitTests
 
-//#define zsq(format, ...) printf(format __VA_OPT__(,) __VA_ARGS__)
+
 - (void)testExample {
   NSArray<NSString *> * stringArray = @[@"abc", @"xyz"];
   foreach (xyz, stringArray) {
@@ -33,6 +33,14 @@
   
   let x = @keyPath(stringArray, firstObject.length);
   NSLog(@"x = %@", x);
+  
+  NSLog(@"Static var = %@", CreateOnce(@"SVAR"));
+  
+  let equal = ObjectIsEqual(@"abc", @"abc");
+  NSLog(@"Is equal = %@", @(equal));
+  
+  let iskind = ObjectIsMemberOf(@"abc", NSString);
+  
 }
 
 @end
