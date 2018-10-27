@@ -31,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D41AA91E2183FC1900B23325 /* ProjectCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectCommon.xcconfig; sourceTree = "<group>"; };
+		D41AA91F2183FC1900B23325 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		D41AA9202183FC1900B23325 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		D41AA9212183FC1900B23325 /* TargetCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TargetCommon.xcconfig; sourceTree = "<group>"; };
 		D4BEFB772022A1960061631C /* ObjcKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BEFB7A2022A1960061631C /* ObjcKit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = ObjcKit.h; sourceTree = "<group>"; };
 		D4BEFB7B2022A1960061631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,11 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D41AA91D2183FC1900B23325 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				D41AA91E2183FC1900B23325 /* ProjectCommon.xcconfig */,
+				D41AA9212183FC1900B23325 /* TargetCommon.xcconfig */,
+				D41AA91F2183FC1900B23325 /* Framework.xcconfig */,
+				D41AA9202183FC1900B23325 /* Test.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		D4BEFB6D2022A1960061631C = {
 			isa = PBXGroup;
 			children = (
-				D4BEFB792022A1960061631C /* ObjcKit */,
-				D4BEFB842022A1960061631C /* ObjcKitTests */,
+				D41AA91D2183FC1900B23325 /* Configs */,
+				D4BEFB792022A1960061631C /* Sources */,
+				D4BEFB842022A1960061631C /* Tests */,
 				D4BEFB782022A1960061631C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +100,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4BEFB792022A1960061631C /* ObjcKit */ = {
+		D4BEFB792022A1960061631C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				D4BEFB7A2022A1960061631C /* ObjcKit.h */,
@@ -96,16 +112,16 @@
 				D4BEFBD82026EE9D0061631C /* MetaMacro */,
 				D4BEFB7B2022A1960061631C /* Info.plist */,
 			);
-			path = ObjcKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		D4BEFB842022A1960061631C /* ObjcKitTests */ = {
+		D4BEFB842022A1960061631C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				D4BEFB852022A1960061631C /* ObjcKitTests.m */,
 				D4BEFB872022A1960061631C /* Info.plist */,
 			);
-			path = ObjcKitTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		D4BEFBD82026EE9D0061631C /* MetaMacro */ = {
@@ -267,6 +283,7 @@
 /* Begin XCBuildConfiguration section */
 		D4BEFB892022A1960061631C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA91E2183FC1900B23325 /* ProjectCommon.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -316,12 +333,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
-				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -329,6 +342,7 @@
 		};
 		D4BEFB8A2022A1960061631C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA91E2183FC1900B23325 /* ProjectCommon.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -372,12 +386,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -385,18 +395,14 @@
 		};
 		D4BEFB8C2022A1960061631C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA91F2183FC1900B23325 /* Framework.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ObjcKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.ObjcKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -406,18 +412,14 @@
 		};
 		D4BEFB8D2022A1960061631C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA91F2183FC1900B23325 /* Framework.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ObjcKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.ObjcKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -427,15 +429,13 @@
 		};
 		D4BEFB8F2022A1960061631C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA9202183FC1900B23325 /* Test.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ObjcKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.ObjcKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,15 +444,13 @@
 		};
 		D4BEFB902022A1960061631C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41AA9202183FC1900B23325 /* Test.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ObjcKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.ObjcKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
